@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Prompt", sans-serif;
+  color: #06063d;
+}
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: #050505;
+}
+main {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 101px;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+.logo {
+  width: 159px;
+  height: 56px;
+}
+.navList {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.navItem {
+  margin-right: 52px;
+}
+.navItem:last-of-type {
+  margin-right: 0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+
+/**
+    Hide the checkbox itself. Checking and unchecking 
+    it we will be done via the label element.
+*/
+
+.dropdownInput {
+  display: none;
+}
+
+/* Click to expand button */
+
+.dropdownLabel {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background-color: transparent;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #06063d;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.selectIcon {
+  width: 30px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+/*  The ul will have display:none by default */
+
+.dropdownList {
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.dropdownList .dropdownItem {
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.dropdownList .dropdownItem:last-of-type {
+  box-shadow: none;
+}
+
+.dropdownList .dropdownItem:hover {
+  background-color: #4fb9a7;
+  color: #fff;
+}
+
+/**
+
+    By using the Following-sibling selector (~),
+    we can target elements positioned after our checkbox in the DOM tree.
+
+    With the state pseudo selector (:checked),
+    we can make changes depending on the state of the checkbox.
+
+    Using this combination of selectors
+    allows to change the color of the label
+    and show the list of items
+    only when the checkbox is checked.
+
+*/
+
+/* .dropdownInput:checked ~ .dropdownLabel {
+  background-color: #3d88bd;
+} */
+
+.dropdownInput:checked ~ .dropdownList {
+  display: block;
+}
+.dropdownButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  font: inherit;
+  color: #06063d;
+  box-shadow: none;
+  border: none;
+}
+.optionIcon {
+  width: 30px;
+  height: 20px;
+  margin-right: 12px;
+}
+.introduceBackground {
+  background: #293896;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  color: #fff;
+}
+.introduceContent {
+  max-width: 1200px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduceTitle {
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 72px;
+  margin-bottom: 32px;
+}
+.introduceText {
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 624px;
+  margin-bottom: 32px;
+}
+.introduceButton {
+  padding: 16px 25px;
+  font-size: 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: inherit;
+  width: 173px;
+}
+.footer {
+  background: #06063d;
+  color: #fff;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  padding: 120px 2rem 80px 2rem;
+}
+.contactsContactsContaner {
+}
+.contactLabel {
+  color: #009cd7;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+.contactValue {
+  font-size: 26px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.contactsContactList {
+  list-style: none;
+}
+.footerBackground {
+  background: #06063d;
+}
+.footerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 101px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 2rem;
+}
+.contentWrapper {
+  max-width: 1200px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.warpper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 70px;
+}
+.tab {
+  cursor: pointer;
+  color: #273896;
+  border: 2px solid lightgray;
+  padding: 0.47rem 0.75rem;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 0px;
+  font-size: 18px;
+  background: #fff;
+}
+.tab:hover {
+  color: #fff;
+  background: #293896;
+  border-color: transparent;
+}
+.tab:last-of-type {
+  margin-right: 0;
+}
+.tabs {
+  margin-bottom: 32px;
+}
+.panels {
+  width: 100%;
+}
+.panel {
+  display: none;
+  animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.radio {
+  display: none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel {
+  display: block;
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab {
+  color: #fff;
+  background: #293896;
+  border: 2px solid transparent;
+}
+.productsTitle {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 16px;
+}
+.productsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.productItem {
+  width: calc(33% - (16px * 2 / 3));
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.productItem:hover .productItemImage {
+  border: 6px solid #0088cc;
+  transition: all 0.2s;
+  border-radius: 6px 6px 0 0;
+}
+.productsList .productItem:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.productItemImage {
+  padding: 40px;
+  margin: 0 auto;
+  height: 260px;
+  width: 260px;
+  object-fit: contain;
+}
+.productName {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+}
+.productWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.productTitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.productImg {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 16px;
+  max-height: 350px;
+  object-fit: contain;
+}
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+.table th {
+  font-weight: bold;
+  padding: 5px;
+  background: #efefef;
+  border: 1px solid #dddddd;
+}
+.table td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 5px;
+}
+.table:last-of-type {
+  margin-bottom: 0;
+}
+.productFlexContainer {
+  display: flex;
+  margin-bottom: 32px;
+}
+.productAdvantagesList {
+  list-style-type: decimal;
+  margin-left: 32px;
+}
+.productDescription {
+  margin-top: 32px;
+}
+.productVideo {
+  width: 410px;
+  height: 290px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.productImgList {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.productImgListItem {
+  width: calc(25% - (32px / 4 * 3));
+  margin-right: 32px;
+}
+.productImgListItem:last-of-type {
+  margin-right: 0;
+}
+.productImgListImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.productVideoFull {
+  width: 100%;
+  height: 315px;
+  margin-left: 40px;
+}
