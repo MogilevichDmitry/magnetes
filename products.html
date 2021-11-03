@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>Магнитар</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <p class='logo'>  Magnitar </p>
+        <nav>
+            <ul class="navList">
+                <li class="navItem">
+                    <a>Home</a>
+                </li>
+                <li class="navItem">
+                    <a>Products</a>
+                </li>
+                <li class="navItem">
+                    <a>Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <input class="dropdownInput" type="checkbox" id="checkbox-toggle">
+            <label class="dropdownLabel" for="checkbox-toggle"> <img class="selectIcon" src="./images/gbFlag.svg" /> English (change)</label>
+            <ul class="dropdownList">
+                <li class='dropdownItem'>
+                    <button class="dropdownButton">
+                        <img class="optionIcon" src='./images/polishFlag.svg'>
+                        Polish
+                    </button>
+                <li class='dropdownItem'>
+                    <button class="dropdownButton">
+                        <img class="optionIcon" src='./images/germanFlag.svg'>
+                        German
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="contentWrapper">
+        <div class="warpper">
+            <h2 class="productsTitle"> Products</h2>
+            <input class="radio" id="one" name="group" type="radio" checked>
+            <input class="radio" id="two" name="group" type="radio">
+            <input class="radio" id="three" name="group" type="radio">
+            <input class="radio" id="four" name="group" type="radio">
+            <div class="tabs">
+            <label class="tab" id="one-tab" for="one">Products</label>
+            <label class="tab" id="two-tab" for="two">Magnetic grips</label>
+            <label class="tab" id="three-tab" for="three">Magnetic plates</label>
+            <label class="tab" id="four-tab" for="four">Other</label>
+              </div>
+        <div class="panels">
+            <div class="panel" id="one-panel">
+              <ul class="productsList">
+                  <li class="productItem">
+                      <img class="productItemImage" src='./images/podemnyKran.png'>
+                      <h4 class="productName">CRANE</h4>
+                  </li>
+                  <li class="productItem">
+                    <img class="productItemImage" src='./images/talCepnayaRuchnaya.png'>
+                    <h4 class="productName">TAL CHAIN MANUAL</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/lebedkaRuchnaya.png'>
+                    <h4 class="productName">HAND DRUM WINCH</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/telezhkaRuchnaya.png'>
+                    <h4 class="productName">MANUAL HYDRAULIC TROLLEY</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/pruzhinnyBalansir.png'>
+                    <h4 class="productName">SPRING BALANCE</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/mahnitZahvatSa.png'>
+                    <h4 class="productName">SAGIES SERIES MAGNETIC CAPTURES</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/mahnitZahvatLsa.png'>
+                    <h4 class="productName">MAGNETIC CAPTURES OF THE LZA SERIES</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/plitamagnitpnym.jpg'>
+                    <h4 class="productName">MAGNETIC PLATE OF the PMUM SERIES</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/plitamagnitnayapmm.jpg'>
+                    <h4 class="productName">Magnetic plate of the PMM series</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/plitaNaklonpnn.jpg'>
+                    <h4 class="productName">PLATE MAGNETIC INCLINED PMN SERIES</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/plitamagnitpms.jpg'>
+                    <h4 class="productName">MAGNETIC SINUS PLATE OF PMS SERIES</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/patronMagnitPmkyn.jpg'>
+                    <h4 class="productName">CARTRIDGE MAGNETIC ROUND PMKUM SERIES</h4>
+                </li>
+                <li class="productItem">
+                    <img class="productItemImage" src='./images/patronMagnitPmkm.jpg'>
+                    <h4 class="productName">MAGNETIC ROUND CARTRIDGE OF PMKM SERIES</h4>
+                </li>
+              </ul>
+            </div>
+            <div class="panel" id="two-panel">
+                <ul class="productsList">
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/mahnitZahvatSa.png'>
+                        <h4 class="productName">SAGIES SERIES MAGNETIC CAPTURES</h4>
+                    </li>
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/mahnitZahvatLsa.png'>
+                        <h4 class="productName">MAGNETIC CAPTURES OF THE LZA SERIES</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel" id="three-panel">
+                <ul class="productsList">
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/plitamagnitpnym.jpg'>
+                        <h4 class="productName">MAGNETIC PLATE OF the PMUM SERIES</h4>
+                    </li>
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/plitamagnitnayapmm.jpg'>
+                        <h4 class="productName">Magnetic plate of the PMM series</h4>
+                    </li>
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/plitaNaklonpnn.jpg'>
+                        <h4 class="productName">PLATE MAGNETIC INCLINED PMN SERIES</h4>
+                    </li>
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/plitamagnitpms.jpg'>
+                        <h4 class="productName">MAGNETIC SINUS PLATE OF PMS SERIES</h4>
+                    </li>
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/patronMagnitPmkyn.jpg'>
+                        <h4 class="productName">CARTRIDGE MAGNETIC ROUND PMKUM SERIES</h4>
+                    </li>
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/patronMagnitPmkm.jpg'>
+                        <h4 class="productName">MAGNETIC ROUND CARTRIDGE OF PMKM SERIES</h4>
+                    </li>  
+                </ul>
+            </div>
+            <div class="panel" id="four-panel">
+                <ul class="productsList">
+                    <li class="productItem">
+                        <img class="productItemImage" src='./images/podemnyKran.png'>
+                        <h4 class="productName">CRANE</h4>
+                    </li>
+                    <li class="productItem">
+                      <img class="productItemImage" src='./images/talCepnayaRuchnaya.png'>
+                      <h4 class="productName">TAL CHAIN MANUAL</h4>
+                  </li>
+                  <li class="productItem">
+                      <img class="productItemImage" src='./images/lebedkaRuchnaya.png'>
+                      <h4 class="productName">HAND DRUM WINCH</h4>
+                  </li>
+                  <li class="productItem">
+                      <img class="productItemImage" src='./images/telezhkaRuchnaya.png'>
+                      <h4 class="productName">MANUAL HYDRAULIC TROLLEY</h4>
+                  </li>
+                  <li class="productItem">
+                      <img class="productItemImage" src='./images/pruzhinnyBalansir.png'>
+                      <h4 class="productName">SPRING BALANCE</h4>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="contacts">
+        <div class="contactsTextContainer">
+            <h2 class="introduceTitle">
+                Contact us
+            </h2>
+            <p class="introduceText">
+                LLC Magnitar is one of the leading manufacturers of lifting magnetic grips in the Russian Federation. Over the years, the company has established itself as a sustainable company and a reliable business partner.
+            </p>
+        </div>
+        <div class="contactsContactsContaner">
+            <ul class="contactsContactList">
+                <li>
+                    <p class="contactLabel">Email</p>
+                    <p class="contactValue"> info@magnitar.ru</p>
+                </li>
+                <li>
+                    <p class="contactLabel">Phone</p>
+                    <p class="contactValue"> (495) 988-6072</p>
+                </li>
+                <li>
+                    <p class="contactLabel">Address</p>
+                    <p class="contactValue">  г. Москва,
+                        ул. Кулакова, д. 20, стр. 1а</p>
+                </li>
+        </ul>
+        </div>
+    </div class="contacts">
+    <div class="footerNav">
+        <ul class="navList">
+            <li class="navItem">
+                <a>Home</a>
+            </li>
+            <li class="navItem">
+                <a>Products</a>
+            </li>
+            <li class="navItem">
+                <a>Contacts</a>
+            </li>
+        </ul>
+        <p>© 2020. ALL RIGHTS RESERVED</p>
+    </div>
+    </div>
+</body>
+</html>
