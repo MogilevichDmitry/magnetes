@@ -11,42 +11,66 @@
 </head>
 <body>
     <header class="header">
-        <p class='logo'>  Magnitar </p>
-        <nav>
-            <ul class="navList">
-                <li class="navItem">
-                    <a>Home</a>
-                </li>
-                <li class="navItem">
-                    <a>Products</a>
-                </li>
-                <li class="navItem">
-                    <a>Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="dropdown">
-            <input class="dropdownInput" type="checkbox" id="checkbox-toggle">
-            <label class="dropdownLabel" for="checkbox-toggle"> <img class="selectIcon" src="./images/gbFlag.svg" /> English (change)</label>
-            <ul class="dropdownList">
-                <li class='dropdownItem'>
-                    <button class="dropdownButton">
-                        <img class="optionIcon" src='./images/polishFlag.svg'>
-                        Polish
-                    </button>
-                <li class='dropdownItem'>
-                    <button class="dropdownButton">
-                        <img class="optionIcon" src='./images/germanFlag.svg'>
-                        German
-                    </button>
-                </li>
-            </ul>
+        <div class="headerContainer">
+            <div class="hamburger-menu desktopHidden">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn productMenu__btn" for="menu__toggle">
+                <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                <li><a class="menu__item" href="./index.html">Home</a></li>
+                        <li><a class="menu__item" href="./products.html">Products</a></li>
+                        <li><a class="menu__item" href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <a href="./index.html">
+                <p class='logo'> Magnitar </p>
+            </a>
+            <nav class="navigation">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="./products.html">Products</a>
+                    </li>
+                    <li class="navItem">
+                        <a>Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <input class="dropdownInput" type="checkbox" id="checkbox-toggle">
+                <label class="dropdownLabel" for="checkbox-toggle"> <img class="selectIcon" src="./images/gbFlag.svg" /> 
+                    <p class="dropdownText productDropdownText">
+                        English (change)
+                    </p>
+                </label>
+                <ul class="dropdownList">
+                    <li class='dropdownItem'>
+                        <button class="dropdownButton">
+                            <img class="optionIcon" src='./images/polishFlag.svg'>
+                            <p class="dropdownText">
+                                Polish
+                            </p>
+                        </button>
+                    <li class='dropdownItem'>
+                        <button class="dropdownButton">
+                            <img class="optionIcon" src='./images/germanFlag.svg'>
+                            <p class="dropdownText">
+                                German
+                            </p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main class='contentWrapper'>
         <div class="productWrapper">
             <h3 class="productTitle">ТАЛЬ ЦЕПНАЯ РУЧНАЯ СЕРИИ DE</h3>
-            <img class="productImg" src="./images/tal2.png">
+            <img class="productImg talImg" src="./images/tal2.png">
             <table class="table">
                 <thead>
                     <tr>
@@ -134,7 +158,7 @@
                 </tbody>
             </table>
             <h3 class="productTitle">ТАЛЬ ЦЕПНАЯ РУЧНАЯ РЫЧАЖНАЯ</h3>
-            <img class="productImg" src="./images/talCepnayaRuchnaya.png" />
+            <img class="productImg talImg" src="./images/talCepnayaRuchnaya.png" />
             <table class="table">
                 <thead>
                     <tr>
@@ -207,47 +231,47 @@
         </div>
     </main>
     <footer class="footer">
-    <div class="contacts">
-        <div class="contactsTextContainer">
-            <h2 class="introduceTitle">
-                Contact us
-            </h2>
-            <p class="introduceText">
-                LLC Magnitar is one of the leading manufacturers of lifting magnetic grips in the Russian Federation. Over the years, the company has established itself as a sustainable company and a reliable business partner.
-            </p>
+        <div class="contacts">
+            <div class="contactsTextContainer">
+                <h2 class="introduceTitle">
+                    Contact us
+                </h2>
+                <p class="introduceText">
+                    LLC Magnitar is one of the leading manufacturers of lifting magnetic grips in the Russian Federation. Over the years, the company has established itself as a sustainable company and a reliable business partner.
+                </p>
+            </div>
+            <div class="contactsContactsContaner">
+                <ul class="contactsContactList">
+                    <li>
+                        <p class="contactLabel">Email</p>
+                        <p class="contactValue"> info@magnitar.ru</p>
+                    </li>
+                    <li>
+                        <p class="contactLabel">Phone</p>
+                        <p class="contactValue"> (495) 988-6072</p>
+                    </li>
+                    <li>
+                        <p class="contactLabel">Address</p>
+                        <p class="contactValue">  г. Москва,
+                            ул. Кулакова, д. 20, стр. 1а</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="contactsContactsContaner">
-            <ul class="contactsContactList">
-                <li>
-                    <p class="contactLabel">Email</p>
-                    <p class="contactValue"> info@magnitar.ru</p>
+        <div class="footerNav">
+            <ul class="navList footerNav">
+                <li class="navItem footerNavItem">
+                    <a href='./index.html'>Home</a>
                 </li>
-                <li>
-                    <p class="contactLabel">Phone</p>
-                    <p class="contactValue"> (495) 988-6072</p>
+                <li class="navItem footerNavItem">
+                    <a href="./products.html">Products</a>
                 </li>
-                <li>
-                    <p class="contactLabel">Address</p>
-                    <p class="contactValue">  г. Москва,
-                        ул. Кулакова, д. 20, стр. 1а</p>
+                <li class="navItem footerNavItem">
+                    <a>Contacts</a>
                 </li>
-        </ul>
+            </ul>
+            <p>© 2020. ALL RIGHTS RESERVED</p>
         </div>
-    </div class="contacts">
-    <div class="footerNav">
-        <ul class="navList">
-            <li class="navItem">
-                <a>Home</a>
-            </li>
-            <li class="navItem">
-                <a>Products</a>
-            </li>
-            <li class="navItem">
-                <a>Contacts</a>
-            </li>
-        </ul>
-        <p>© 2020. ALL RIGHTS RESERVED</p>
-    </div>
-    </div>
+    </footer>
 </body>
 </html>
