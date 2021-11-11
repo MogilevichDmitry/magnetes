@@ -45,9 +45,8 @@ button {
 }
 .headerContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   min-height: 101px;
   align-items: center;
   margin: 0 auto;
@@ -64,6 +63,10 @@ button {
 .logo {
   font-size: 26px;
   font-weight: 500;
+}
+
+.navigation {
+  margin-left: auto;
 }
 .navList {
   display: flex;
@@ -87,6 +90,7 @@ button {
   display: inline-block;
   font-size: 16px;
   color: #fff;
+  margin-left: auto;
 }
 
 /**
@@ -122,11 +126,6 @@ button {
 .productDropdownLabel {
   color: #fff;
 }
-.selectIcon {
-  width: 30px;
-  height: 20px;
-  margin-right: 12px;
-}
 
 /*  The ul will have display:none by default */
 
@@ -139,18 +138,21 @@ button {
   margin: 0;
   padding: 0;
   display: none;
+  -webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.15);
 }
 
-.dropdownList .dropdownItem {
+.dropdownItem {
   background-color: #fff;
   cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
-.dropdownList .dropdownItem:last-of-type {
-  box-shadow: none;
+.dropdownItem:last-of-type {
+  border-top: 1px solid rgba(0,0,0,0.1);
+
 }
 
-.dropdownList .dropdownItem:hover {
+.dropdownItem:hover {
   background-color: #0088cc;
   color: #fff;
 }
@@ -192,9 +194,12 @@ button {
 }
 
 .optionIcon {
-  width: 30px;
-  height: 20px;
+  width: 32px;
+  height: 16px;
   margin-right: 12px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .hamburger-menu {
   width: 26px;
@@ -274,6 +279,7 @@ button {
   top: 0;
   left: -100%;
   width: 300px;
+  max-width: 76%;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -281,7 +287,10 @@ button {
   background-color: #fff;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   color: #06063d;
-  transition-duration: 0.25s;
+  transition: left 0.25s;
+  -webkit-box-shadow: 100px 0px 0px 2000px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 100px 0px 0px 2000px rgba(0, 0, 0, 0.35);
+  box-shadow: 100px 0px 0px 2000px rgba(0, 0, 0, 0.35);
 }
 
 .menu__item {
@@ -297,13 +306,17 @@ button {
   background-color: #0088cc;
 }
 .introduceBackground {
-  background: #293896;
+  background-image: url('./images/bg-int.svg');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 68% 50%;
+  background-color: #293896;
   padding-top: 120px;
   padding-bottom: 80px;
   color: #fff;
 }
 .introduceContent {
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -313,7 +326,7 @@ button {
 
 .introduceTitle {
   font-weight: 400;
-  font-size: 57px;
+  font-size: 52px;
   line-height: 72px;
   margin-bottom: 32px;
 }
@@ -334,7 +347,6 @@ button {
 .introduceButton:hover {
   background: #fff;
   color: #293896;
-  border: 1px solid #293896;
 }
 .footer {
   background: #06063d;
@@ -344,7 +356,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   align-items: center;
   margin: 0 auto;
   padding-top: 120px;
@@ -355,7 +367,7 @@ button {
 }
 .productsLinksTitle {
   font-weight: 400;
-  font-size: 57px;
+  font-size: 52px;
   line-height: 72px;
   margin-bottom: 32px;
 }
@@ -363,7 +375,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   align-items: center;
   margin: 0 auto;
   padding-top: 120px;
@@ -373,12 +385,12 @@ button {
 
 .contactLabel {
   color: #009cd7;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   margin-bottom: 4px;
 }
 .contactValue {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 24px;
   margin-bottom: 20px;
 }
@@ -395,14 +407,14 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   min-height: 101px;
   margin: 0 auto;
   color: #fff;
   padding: 0 2rem;
 }
 .contentWrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -500,7 +512,7 @@ button {
   margin-bottom: 40px;
 }
 .productItem:hover .productBackground {
-  border: 6px solid #0088cc;
+  border: 4px solid #0088cc;
   transition: all 0.2s;
   border-radius: 6px 6px 0 0;
 }
@@ -509,7 +521,7 @@ button {
   height: 400px;
   background-position: center center;
   position: relative;
-  border: 6px solid transparent;
+  border: 4px solid transparent;
   border-radius: 6px 6px 0 0;
   background-size: 75%;
 }
@@ -526,7 +538,7 @@ button {
   display: block;
   z-index: 1;
   background: rgb(22, 28, 45);
-  opacity: 0.1;
+  opacity: 0.075;
   position: absolute;
 }
 .productsList .productItem:nth-child(3n + 3) {
@@ -559,8 +571,8 @@ button {
   padding-top: 40px;
 }
 .productTitle {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 400;
   line-height: 34px;
   text-align: center;
   margin-bottom: 32px;
@@ -664,8 +676,8 @@ table {
   margin-left: 0;
 }
 .grapperVideo {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 520px;
 }
 .desktopHidden {
   display: none;
@@ -736,7 +748,7 @@ table {
 }
 @media (max-width: 768px) {
   .logo {
-    transform: translateX(6px);
+    margin-left: 30px;
   }
   .introduceButton {
     margin-left: auto;
@@ -812,14 +824,29 @@ table {
   .menu__box {
     overflow-y: hidden;
   }
-  .selectIcon {
-    margin-right: 0;
-  }
   .menu__btn {
     left: 12px;
   }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .optionIcon {
+    margin-right: 0;
+  }
   .contacts {
     padding: 60px 12px 40px 12px;
+  }
+  .productTitle {
+    font-size: 24px;
+  }
+  .productWrapper {
+    padding-bottom: 25px;
+  }
+
+  .contactValue {
+    font-size: 20px;
   }
   .introduceBackground {
     padding-top: 60px;
@@ -832,6 +859,11 @@ table {
   }
   .introduceContent {
     padding: 0 12px;
+  }
+
+  .introduceText {
+    font-size: 18px;
+    line-height: 28px;
   }
   .productsLinks {
     padding: 60px 12px 40px 12px;
@@ -860,9 +892,9 @@ table {
     padding-right: 12px;
     padding-left: 12px;
   }
-  .introduceTitle {
-    font-size: 50px;
-    line-height: 50px;
+  .introduceTitle, .productsLinksTitle {
+    font-size: 40px;
+    line-height: 40px;
   }
   .tabs {
     justify-content: center;
@@ -887,9 +919,6 @@ table {
     width: 100%;
     height: auto;
     max-height: 400px;
-  }
-  .productTitle {
-    font-weight: 500;
   }
   .productVideoFull {
     height: 300px;
