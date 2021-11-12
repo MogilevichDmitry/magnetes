@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicon.svg"/>
+    <title>Magnetes</title>
     <script>
         function disableBurgerScroll() {
             const burger = document.getElementById('menu__toggle');
@@ -38,14 +40,26 @@
                 <ul class="menu__box">
                 <li><a class="menu__item" href="./index.html">Home</a></li>
                         <li><a class="menu__item" href="./products.html">Products</a></li>
-                        <li><a class="menu__item" href="#">Contacts</a></li>
+                            <div class= "burgerContactsContainer">
+                                <ul class="contactsContactList">
+                                    <li class="burgerContact">
+                                        <img class="contactIcon" src="./images/emailIcon.svg" />
+                                        <a href="mailto:info@magnitar.ru" class="contactValue burgerContactValue"> info@magnitar.ru</a>
+                                    </li>
+                                    <li class="burgerContact">
+                                        <img class="contactIcon" src="./images/phoneIcon.svg" />
+                                        <a href="tel:+74959886072" class="contactValue burgerContactValue"> (495) 988-6072</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                 </ul>
             </div>
             <p class='logo'>
                 <a href="./index.html">
-                    Magnitar 
+                    Magnetes 
                 </a>
-            </p>
+            </p>    
             <nav class="navigation">
                 <ul class="navList">
                     <li class="navItem">
@@ -95,7 +109,7 @@
             <p class="introduceText">
                 LLC Magnitar is one of the leading manufacturers of lifting magnetic grips in the Russian Federation. Over the years, the company has established itself as a sustainable company and a reliable business partner.
             </p>
-            <button class="introduceButton">Contact</button>
+            <button onclick="scrollToContact()" class="introduceButton">Contact</button>
         </div>
         </div>
         <div class="productsLinks">
@@ -137,34 +151,36 @@
                 <ul class="contactsContactList">
                     <li>
                         <p class="contactLabel">Email</p>
-                        <p class="contactValue"> info@magnitar.ru</p>
+                        <a href= "mailto:info@magnitar.ru" class="contactValue"> info@magnitar.ru</a>
                     </li>
                     <li>
                         <p class="contactLabel">Phone</p>
-                        <p class="contactValue"> (495) 988-6072</p>
+                        <a href="tel:+74959886072" class="contactValue"> (495) 988-6072</a>
                     </li>
                     <li>
                         <p class="contactLabel">Address</p>
-                        <p class="contactValue">  г. Москва,
+                        <p class="contactValue adress">  г. Москва,
                             ул. Кулакова, д. 20, стр. 1а</p>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="footerNav">
-            <ul class="navList mobileFooterNavList">
-                <li class="navItem footerNavItem">
-                    <a>Home</a>
-                </li>
-                <li class="navItem footerNavItem">
-                    <a>Products</a>
-                </li>
-                <li class="navItem footerNavItem">
-                    <a>Contacts</a>
-                </li>
-            </ul>
-            <p>© 2021. ALL RIGHTS RESERVED</p>
+        <div class="footerNavBackground">
+            <div class="footerNav">
+                <ul class="navList mobileFooterNavList">
+                    <li class="navItem footerNavItem">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="navItem footerNavItem">
+                        <a href="./products.html">Products</a>
+                    </li>
+                    <li class="navItem footerNavItem">
+                        <a>Contacts</a>
+                    </li>
+                </ul>
+                <p>© 2021. ALL RIGHTS RESERVED</p>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

@@ -13,6 +13,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 a:visited {
   color: inherit;
@@ -38,6 +39,8 @@ button {
 .header {
   background: #06063d;
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 .mainHeader {
   background: #fff;
@@ -78,12 +81,17 @@ button {
 }
 .navItem {
   margin-right: 52px;
+  cursor: pointer;
 }
 .navItem:hover {
   color: #273896;
 }
 .navItem:last-of-type {
   margin-right: 0;
+}
+.footerNavItem:hover {
+  color: #ff6700;
+  transition: color 0.2 ease;
 }
 .dropdown {
   position: relative;
@@ -148,8 +156,7 @@ button {
   cursor: pointer;
 }
 .dropdownItem:last-of-type {
-  border-top: 1px solid rgba(0,0,0,0.1);
-
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .dropdownItem:hover {
@@ -195,7 +202,7 @@ button {
 
 .optionIcon {
   width: 32px;
-  height: 16px;
+  height: 20px;
   margin-right: 12px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
@@ -229,7 +236,7 @@ button {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 35px;
+  top: 38px;
   left: 2rem;
   width: 26px;
   height: 26px;
@@ -272,7 +279,8 @@ button {
   top: 8px;
 }
 .menu__box {
-  display: block;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   position: fixed;
   visibility: hidden;
@@ -291,11 +299,12 @@ button {
   -webkit-box-shadow: 100px 0px 0px 2000px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 100px 0px 0px 2000px rgba(0, 0, 0, 0.35);
   box-shadow: 100px 0px 0px 2000px rgba(0, 0, 0, 0.35);
+  padding-bottom: 0;
 }
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 12px;
   font-size: 20px;
   color: #06063d;
   font-weight: 400;
@@ -306,10 +315,6 @@ button {
   background-color: #0088cc;
 }
 .introduceBackground {
-  background-image: url('./images/bg-int.svg');
-  background-repeat: no-repeat;
-  background-size: 300px;
-  background-position: 68% 50%;
   background-color: #293896;
   padding-top: 120px;
   padding-bottom: 80px;
@@ -317,6 +322,10 @@ button {
 }
 .introduceContent {
   max-width: 1400px;
+  background-image: url("./images/bg-int.svg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center right;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -347,9 +356,14 @@ button {
 .introduceButton:hover {
   background: #fff;
   color: #293896;
+  transition: all 0.3 ease;
+}
+.footerNavBackground {
+  background-color: #06063d;
 }
 .footer {
-  background: #06063d;
+  background: #293896;
+  /* background: #06063d; */
   color: #fff;
 }
 .productsLinks {
@@ -382,17 +396,37 @@ button {
   padding-bottom: 80px;
   padding: 120px 2rem 80px 2rem;
 }
-
 .contactLabel {
+  /* color: #ff6700; */
   color: #009cd7;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 4px;
 }
 .contactValue {
+  display: block;
+  cursor: pointer;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 20px;
+  color: #fff;
+}
+.burgerContact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.burgerContactValue {
+  color: #06063d;
+  margin-bottom: 0;
+}
+.burgerContactsContainer {
+  padding-left: 12px;
+  margin-top: 24px;
+  margin-top: auto;
+}
+.adress {
+  cursor: initial;
 }
 .contactsContactsContaner {
   margin-left: 16px;
@@ -588,7 +622,7 @@ button {
 }
 .table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-collapse: collapse;
   display: block;
   overflow-x: auto;
@@ -653,8 +687,8 @@ table {
   object-fit: cover;
 }
 .productVideoFull {
-  width: 550px;
-  height: 400px;
+  width: 100%;
+  height: 600px;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -685,6 +719,20 @@ table {
 .burgerBackground {
   display: none;
 }
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  fill: #06063d;
+  margin-right: 8px;
+}
+.burgerContactValue {
+  font-size: 20px;
+}
+@media (min-width: 1140px) {
+  .talTable {
+    display: table;
+  }
+}
 @media (min-width: 910px) {
   .pmkumTable {
     display: table;
@@ -706,10 +754,20 @@ table {
     white-space: normal;
   }
 }
+@media (min-width: 540px) {
+  .menu__item {
+    padding-left: 2rem;
+  }
+  .burgerContactsContainer {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+}
 @media (max-width: 1024px) {
   .contacts {
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 80px;
   }
   .contactsTextContainer {
     display: flex;
@@ -719,6 +777,9 @@ table {
   .contactsContactsContaner {
     margin-left: 0;
   }
+  .introduceContent {
+    background-image: none;
+  }
   .introduceText {
     max-width: none;
   }
@@ -727,6 +788,12 @@ table {
   }
   .productItem {
     width: calc(50% - 16px / 2);
+  }
+  .productsList .productItem:nth-child(3n + 3) {
+    margin-right: 16px;
+  }
+  .productsList .productItem:last-of-type {
+    margin-right: 0;
   }
   .productItem:nth-child(even) {
     margin-right: 0;
@@ -769,17 +836,7 @@ table {
   .footerNav {
     flex-wrap: wrap;
     padding-bottom: 2rem;
-  }
-  .productItem {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 40px;
-  }
-  .productItem:nth-last-child(-n + 2) {
-    margin-bottom: 40px;
-  }
-  .productItem:last-of-type {
-    margin-bottom: 0;
+    padding-top: 2rem;
   }
   .productFlexContainer {
     flex-direction: column;
@@ -818,18 +875,33 @@ table {
   .dropdownText {
     display: none;
   }
+  .header {
+    height: 80px;
+  }
   .headerContainer {
     padding: 0 12px;
+    min-height: auto;
   }
   .menu__box {
     overflow-y: hidden;
   }
   .menu__btn {
     left: 12px;
+    top: 27px;
   }
-
+  .productItem {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .productItem:nth-last-child(-n + 2) {
+    margin-bottom: 40px;
+  }
+  .productItem:last-of-type {
+    margin-bottom: 0;
+  }
   .logo {
-    margin-left: 20px;
+    margin-left: 12px;
   }
 
   .optionIcon {
@@ -866,7 +938,7 @@ table {
     line-height: 28px;
   }
   .productsLinks {
-    padding: 60px 12px 40px 12px;
+    padding: 60px 12px 60px 12px;
   }
   .footerNav {
     flex-wrap: wrap;
@@ -885,6 +957,7 @@ table {
     margin-right: 0;
     margin-bottom: 12px;
   }
+
   .footerNavItem:last-of-type {
     margin-bottom: 0;
   }
@@ -892,7 +965,8 @@ table {
     padding-right: 12px;
     padding-left: 12px;
   }
-  .introduceTitle, .productsLinksTitle {
+  .introduceTitle,
+  .productsLinksTitle {
     font-size: 40px;
     line-height: 40px;
   }
