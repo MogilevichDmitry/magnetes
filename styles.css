@@ -796,7 +796,11 @@ table {
   .productsList .productItem:last-of-type {
     margin-right: 0;
   }
-  .productItem:nth-child(even) {
+  .productsList .productItem:nth-child(3n + 3) {
+    margin-right: 0;
+    margin-right: 16px;
+  }
+  .productsList .productItem:nth-child(even) {
     margin-right: 0;
   }
   .productItem:nth-last-child(-n + 2) {
