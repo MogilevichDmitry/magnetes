@@ -908,6 +908,9 @@ table {
   .productItem:last-of-type {
     margin-bottom: 0;
   }
+  .productsList .productItem:nth-child(3n + 3) {
+    margin-right: 0;
+  }
   .logo {
     margin-left: 12px;
   }
