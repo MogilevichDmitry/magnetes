@@ -84,13 +84,14 @@ button {
   cursor: pointer;
 }
 .navItem:hover {
-  color: #273896;
+  color: #ff6700;
+  transition: color 0.2 ease;
 }
 .navItem:last-of-type {
   margin-right: 0;
 }
-.footerNavItem:hover {
-  color: #ff6700;
+.mainHederNavItem:hover {
+  color: #273896;
   transition: color 0.2 ease;
 }
 .dropdown {
