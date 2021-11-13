@@ -860,6 +860,9 @@ table {
   .footerNav {
     justify-content: center;
   }
+  .mobileFooterNavList {
+    margin-bottom: 16px;
+  }
 }
 @media (max-width: 620px) {
   .tab {
