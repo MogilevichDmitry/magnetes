@@ -726,11 +726,20 @@ table {
   height: 16px;
   margin-right: 16px;
 }
+.table th {
+  overflow: hidden;
+  max-width: 140px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
 .burgerContactValue {
   font-size: 18px;
 }
 @media (min-width: 1140px) {
   .talTable {
+    display: table;
+  }
+  .craneTable {
     display: table;
   }
 }
