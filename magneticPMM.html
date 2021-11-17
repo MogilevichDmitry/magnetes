@@ -9,24 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/favicon.svg"/>
-    <script>
-        function disableBurgerScroll() {
-            const burger = document.getElementById('menu__toggle');
-            if(burger.checked){
-                document.body.classList.toggle('lock-scroll');
-            } else {
-                document.body.classList.remove('lock-scroll');
-            }
-        }
-        function scrollToContact() {
-            const element = document.getElementById('contacts');
-            const topPos = element.getBoundingClientRect().top;
-            window.scroll({
-            top: topPos,
-            behavior: 'smooth' 
-            });
-        }
-    </script>
+    <script src="./index.js"></script>
 </head>
 <body>
     <header class="header">
@@ -323,3 +306,4 @@
     </footer>
 </body>
 </html>
+<script src="./dropdownScript.js"></script>
