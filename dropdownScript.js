@@ -5,6 +5,7 @@ const burgerContent = document.getElementById("burgerContent");
 document.addEventListener("click", function () {
   languageCheckbox.checked = false;
   burgerCheckbox.checked = false;
+  document.body.classList.remove("lock-scroll");
   languageDropdown.addEventListener("click", function (event) {
     event.stopPropagation();
   });
