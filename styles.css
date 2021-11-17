@@ -754,6 +754,9 @@ table {
   .talTable {
     display: table;
   }
+  .productBackground {
+    background-size: 50%;
+  }
   .craneTable {
     display: table;
   }
