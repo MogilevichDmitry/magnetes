@@ -151,13 +151,14 @@ button {
   -webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.15);
+  background: #fff;
 }
 
 .dropdownItem {
   background-color: #fff;
   cursor: pointer;
   color: #06063d;
-  width: 72px;
+  width: 100%;
 }
 .dropdownItem:last-of-type {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -900,6 +901,9 @@ table {
 @media (max-width: 540px) {
   .dropdownText {
     display: none;
+  }
+  .dropdownItem {
+    width: 72px;
   }
 
   .dropdown {
