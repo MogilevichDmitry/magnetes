@@ -64,9 +64,12 @@ button {
   color: #fff;
 }
 .logo {
-  color: #06063d;
   font-size: 26px;
   font-weight: 500;
+  color: #fff;
+}
+.mainLogo {
+  color: #06063d;
 }
 
 .navigation {
@@ -132,7 +135,6 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  padding-right: 0;
 }
 .productDropdownLabel {
   color: #fff;
@@ -909,7 +911,9 @@ table {
   .dropdownItem {
     width: 72px;
   }
-
+  .dropdownLabel {
+    padding-right: 0;
+  }
   .dropdown {
     margin-left: auto;
   }
