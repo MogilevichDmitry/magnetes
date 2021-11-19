@@ -21,17 +21,17 @@
                 <span></span>
                 </label>
                 <ul class="menu__box">
-                <li><a class="menu__item" href="./index.html">Home</a></li>
-                        <li><a class="menu__item" href="./products.html">Products</a></li>
+                <li><a class="menu__item" href="./index.html">Strona główna</a></li>
+                        <li><a class="menu__item" href="./products-pl.html">Produkty</a></li>
                             <div class= "burgerContactsContainer">
                                 <ul class="contactsContactList">
                                     <li class="burgerContact">
                                         <img class="contactIcon" src="./images/emailIcon.svg" />
-                                        <a href="mailto:info@magnitar.ru" class="contactValue burgerContactValue"> info@magnitar.ru</a>
+                                        <a href="mailto:info@magnetes.eu" class="contactValue burgerContactValue"> info@magnetes.eu</a>
                                     </li>
                                     <li class="burgerContact">
                                         <img class="contactIcon" src="./images/phoneIcon.svg" />
-                                        <a href="tel:+74959886072" class="contactValue burgerContactValue"> (495) 988-6072</a>
+                                        <a href="tel:+48506551214" class="contactValue burgerContactValue">+48 506 551 214</a>
                                     </li>
                                 </ul>
                             </div>
@@ -46,41 +46,44 @@
             <nav class="navigation">
                 <ul class="navList">
                     <li class="navItem mainHederNavItem">
-                        <a href="./index.html">Home</a>
+                        <a href="./index.html">Strona główna</a>
                     </li>
                     <li class="navItem mainHederNavItem">
-                        <a href="./products.html">Products</a>
+                        <a href="./products-pl.html">Produkty</a>
                     </li>
                     <li class="navItem mainHederNavItem">
-                        <a onclick="scrollToContact()">Contacts</a>
+                        <a onclick="scrollToContact()">Kontakt</a>
                     </li>
                 </ul>
             </nav>
-            <div id="dropdown" class="dropdown">
-                <input class="dropdownInput" type="checkbox" id="checkbox-toggle">
-                <label class="dropdownLabel" for="checkbox-toggle"> <img class="optionIcon" src="./images/gbFlag.svg" /> 
-                    <p class="dropdownText">
-                        English (change)
-                    </p>
-                </label>
-                <ul id="dropdownList" class="dropdownList">
-                    <li class='dropdownItem'>
-                        <a href="./index-pl.html" class="dropdownButton">
-                            <img class="optionIcon" src='./images/polishFlag.svg'>
+            <div class="dropdownContainer">
+                <div id="dropdown" class="dropdown">
+                        <input class="dropdownInput" type="checkbox" id="checkbox-toggle">
+                        <label class="dropdownLabel" for="checkbox-toggle"> <img class="optionIcon" src="./images/polishFlag.svg" /> 
                             <p class="dropdownText">
-                                Polish
+                                Polish (change)
                             </p>
-                        </a>
-                    </li>
-                    <li class='dropdownItem'>
-                        <a href="./index-de.html" class="dropdownButton">
-                            <img class="optionIcon" src='./images/germanFlag.svg'>
-                            <p class="dropdownText">
-                                German
-                            </p>
-                        </a>
-                    </li>
-                </ul>
+                        </label>
+                    <ul class="dropdownList">
+                        <li class='dropdownItem'>
+                            <a href="./index-en.html" class="dropdownButton">
+                                <img class="optionIcon" src='./images/gbFlag.svg'>
+                                <p class="dropdownText">
+                                    English
+                                </p>
+                            </a>
+                        </li>
+                        <li class='dropdownItem'>
+                            <a href="./index-de.html" class="dropdownButton">
+                                <img class="optionIcon" src='./images/germanFlag.svg'>
+                                <p class="dropdownText">
+                                    German
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href= "mailto:info@magnetes.eu" class="headerContactValue mainContactValue">info@magnetes.eu</a>
             </div>
         </div>
     </header>
@@ -88,36 +91,36 @@
         <div class="introduceBackground">
             <div class="introduceContent">
             <h2 class="introduceTitle">
-                Who we Are
+                Kim jesteśmy
             </h2>
             <p class="introduceText">
-                Magnetes LLC supplies modern lifting equipment based on permanent magnets, magnetic holding plates for grinding machines throughout Europe, our equipment is able to meet the needs of the most demanding customer.
+                MAGNETES Sp. z o.o. dostarcza nowoczesne urządzenia podnoszące oparte na magnesach trwałych, płytach magnetycznych do szlifierek na terenie całej Europy, nasz sprzęt jest w stanie spełnić żądania najbardziej wymagającego konsumenta.
 
             </p>
-            <button onclick="scrollToContact()" class="introduceButton">Contact</button>
+            <button onclick="scrollToContact()" class="introduceButton">Kontakt</button>
         </div>
         </div>
         <div class="productsLinks">
             <h2 class="productsLinksTitle">
-                Products
+                Produkty
             </h2>
             <ul class="productsList">
                 <li class="homeProductItem">
-                      <a class="productLink" href="./products.html?type=grips">
+                      <a class="productLink" href="./products-pl.html?type=grips">
                         <div class="productBackground" style="background-image: url('./images/mahnitZahvatSa.png'); "></div>
-                          <h4 class="productName homeProductName">Magnetic grabs</h4>
+                          <h4 class="productName homeProductName">Chwytaki magnetyczne</h4>
                       </a>
                 </li>
                 <li class="homeProductItem">
-                    <a class="productLink" href="./products.html?type=plates">
+                    <a class="productLink" href="./products-pl.html?type=plates">
                         <div class="productBackground" style="background-image: url('./images/plitamagnitpnym.jpg');"></div>
-                        <h4 class="productName homeProductName">Magnetic holding plates</h4>
+                        <h4 class="productName homeProductName">Płyty magnetyczne</h4>
                     </a>
               </li>
-              <!-- <li class="productItem">
-                <a class="productLink" href="./products.html?type=other">
+              <!-- <li class="homeProductItem">
+                <a class="productLink" href="./products-pl.html?type=other">
                     <div class="productBackground productBalance" style="background-image: url('./images/pruzhinnyBalansir.png');"></div>
-                    <h4 class="productName homeProductName">Other</h4>
+                    <h4 class="productName homeProductName">Inne</h4>
                 </a>
           </li> -->
         </div>
@@ -126,26 +129,25 @@
         <div class="contacts" id="contacts">
             <div class="contactsTextContainer">
                 <h2 class="introduceTitle">
-                    Contact us
+                    Skontaktuj się z nami
                 </h2>
                 <p class="introduceText">
-                    Advanced technology, the best quality, and an intelligent and conscientious approach to fulfilling our responsibilities are the foundations on which our company's activities are based.
-                    Magnetes LLC is your reliable partner!
+                    Zaawansowane technologie, najlepsza jakość, kompetentne i sumienne podejście do wykonywania swoich obowiązków to podstawy, na których opiera się działalność naszego przedsiębiorstwa.
                 </p>
             </div>
             <div class="contactsContactsContaner">
                 <ul class="contactsContactList">
                     <li>
-                        <p class="contactLabel">Email</p>
-                        <a href= "mailto:info@magnitar.ru" class="contactValue"> info@magnitar.ru</a>
+                        <p class="contactLabel">E-mail</p>
+                        <a href= "mailto:info@magnetes.eu" class="contactValue"> info@magnetes.eu</a>
                     </li>
                     <li>
                         <p class="contactLabel">Phone</p>
-                        <a href="tel:+74959886072" class="contactValue"> (495) 988-6072</a>
+                        <a href="tel:+48506551214" class="contactValue">+48 506 551 214</a>
                     </li>
                     <li>
-                        <p class="contactLabel">Address</p>
-                        <p class="contactValue adress">Moscow st. Kulakova, 20, building 1a</p>
+                        <p class="contactLabel">Adres</p>
+                        <p class="contactValue adress">Trzy Lipy 2, 80-172, Gdańsk</p>
                     </li>
                 </ul>
             </div>
@@ -154,13 +156,13 @@
             <div class="footerNav">
                 <ul class="navList mobileFooterNavList">
                     <li class="navItem footerNavItem">
-                        <a href="./index.html">Home</a>
+                        <a href="./index.html">Strona główna</a>
                     </li>
                     <li class="navItem footerNavItem">
-                        <a href="./products.html">Products</a>
+                        <a href="./products-pl.html">Produkty</a>
                     </li>
                 </ul>
-                <p>© 2021. ALL RIGHTS RESERVED</p>
+                <p>Designed by <a class="developedLink" href="http://qwerty123.eu">qwerty123.eu </a></p>
             </div>
         </div>
     </footer>

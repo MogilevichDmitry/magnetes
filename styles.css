@@ -64,7 +64,8 @@ button {
   color: #fff;
 }
 .logo {
-  font-size: 26px;
+  font-size: 28px;
+  text-transform: uppercase;
   font-weight: 500;
   color: #fff;
 }
@@ -74,6 +75,7 @@ button {
 
 .navigation {
   margin-left: auto;
+  margin-right: auto;
 }
 .navList {
   display: flex;
@@ -323,8 +325,8 @@ button {
 }
 .introduceBackground {
   background-color: #293896;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: #fff;
 }
 .introduceContent {
@@ -753,6 +755,23 @@ table {
 .burgerContactValue {
   font-size: 18px;
 }
+.developedLink:hover {
+  color: #ff6700;
+}
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+}
+.headerContactValue {
+  font-size: 20px;
+  align-self: center;
+  order: -1;
+}
+.mainContactValue {
+  color: #06063d;
+}
 @media (min-width: 1140px) {
   .talTable {
     display: table;
@@ -848,25 +867,30 @@ table {
     margin-bottom: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .navigation {
+    display: none;
+  }
+  .desktopHidden {
+    display: block;
+  }
   .logo {
     margin-left: 30px;
   }
+  .dropdownContainer {
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
   .introduceButton {
     margin-left: auto;
     margin-right: auto;
     width: 300px;
   }
-  .navigation {
-    display: none;
-  }
 
   .balanceTable th {
     word-wrap: break-word;
     white-space: normal;
-  }
-  .desktopHidden {
-    display: block;
   }
   .footerNav {
     flex-wrap: wrap;
@@ -923,6 +947,7 @@ table {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 24px;
   }
   .dropdownList {
     right: 20px;
@@ -984,7 +1009,7 @@ table {
     font-size: 20px;
   }
   .introduceBackground {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .introduceButton {
@@ -1079,5 +1104,8 @@ table {
   }
   .balanceTable {
     display: block;
+  }
+  .headerContactValue {
+    display: none;
   }
 }
