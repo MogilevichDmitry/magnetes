@@ -938,6 +938,9 @@ table {
   .dropdownText {
     display: none;
   }
+  .dropdownButton {
+    justify-content: center;
+  }
   .dropdownItem {
     width: 72px;
   }
