@@ -23,6 +23,9 @@ html {
   flex-direction: column;
   min-height: 100%;
   color: #06063d;
+
+  /* overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%)); */
 }
 main {
   height: 100%;
@@ -476,6 +479,7 @@ button {
   padding-bottom: 70px;
   padding-top: 40px;
 }
+
 .tab {
   cursor: pointer;
   color: #273896;
@@ -487,14 +491,27 @@ button {
   font-size: 18px;
   background: #fff;
 }
+
 .tab:hover {
   color: #fff;
   background: #293896;
   border-color: transparent;
 }
+
 .tab:last-of-type {
   margin-right: 0;
 }
+
+.tabActive {
+  color: #fff;
+  background-color: #293896;
+  border: 2px solid transparent;
+}
+
+.tabActive:visited {
+  color: white;
+}
+
 .tabs {
   margin-bottom: 32px;
   display: flex;
@@ -504,7 +521,7 @@ button {
   width: 100%;
 }
 .panel {
-  display: none;
+  /* display: none; */
   animation: fadein 0.8s;
 }
 @keyframes fadein {
@@ -518,7 +535,7 @@ button {
 .radio {
   display: none;
 }
-#one:checked ~ .panels #one-panel,
+/* #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel,
 #four:checked ~ .panels #four-panel {
@@ -531,7 +548,8 @@ button {
   color: #fff;
   background: #293896;
   border: 2px solid transparent;
-}
+} */
+
 .productLink {
   display: flex;
   flex-direction: column;
